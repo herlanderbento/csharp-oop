@@ -1,4 +1,5 @@
 ﻿using eLearning.ContentContext;
+using eLearning.SubscriptionContext;
 
 namespace eLearning
 {
@@ -51,6 +52,10 @@ namespace eLearning
                         Console.WriteLine($"{notification.Property} - {notification.Message}");
                     }
                 }
+
+                var payPalSubscription = new PayPalSubscription();
+                var student = new Student();
+                student.CreateSubscription(payPalSubscription);
             }
         }
     }

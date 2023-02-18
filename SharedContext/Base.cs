@@ -1,6 +1,6 @@
 using eLearning.NotificationContext;
 
-namespace eLearning.ContentContext
+namespace eLearning.SharedContext
 {
     public class Base : Notifiable
     {

@@ -1,3 +1,5 @@
+using eLearning.SharedContext;
+
 namespace eLearning.ContentContext
 {
     public class Module : Base
