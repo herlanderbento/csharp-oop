@@ -1,3 +1,4 @@
+using eLearning.NotificationContext;
 
 namespace eLearning.ContentContext
 {
@@ -6,7 +7,7 @@ namespace eLearning.ContentContext
         public CareerItem(int order, string title, string description, Course course)
         {
             if (course == null)
-                throw new System.Exception("O curso nao pode ser nulo");
+                AddNotification(new Notification("Course", "Curso invalido"));
 
             Order = order;
             Title = title;
@@ -18,6 +19,5 @@ namespace eLearning.ContentContext
         public string Title { get; set; }
         public string Description { get; set; }
         public Course Course { get; set; }
-    
     }
 }
